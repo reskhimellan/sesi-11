@@ -1,0 +1,23 @@
+{
+  "name": "selenium-mocha-digital-skola",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Selenium WebDriver tests using Mocha with Mochawesome reports",
+  "scripts": {
+    "xx": "mocha sesi-11.js --timeout 60000",
+    "test-parallel": "mocha sesi-11.js --parallel --recursive --timeout 60000",
+    "test-pertama": "mocha sesi-11.js --grep 'Pertama' --recursive --timeout 60000",
+    "jalanin1": "mocha sesi-11.js --recursive --timeout 60000 --reporter mochawesome",
+    "jalanin2": "start mochawesome-report\\mochawesome.html"
+  },
+  "dependencies": {
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "selenium-webdriver": "^4.38.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.8.2",
+    "mocha-simple-html-reporter": "^2.0.0",
+    "mochawesome": "^7.1.3"
+  }
+}
